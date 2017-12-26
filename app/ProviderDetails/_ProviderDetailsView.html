@@ -1,0 +1,127 @@
+<!--Avatar image-->
+<div layout="row" style="position: absolute;left: 165px;z-index: 1;" >
+    <image style="width: 80px; height: 80px; border-radius: 50%;" src="app/icons/USER_ID.png"></image>
+</div>
+
+<div layout="column" class="full-page-size" style="margin: 30px;">
+    <div flex layout="row">
+        <!--Populates provider overall information-->
+        <md-whiteframe class="md-whiteframe-1dp" flex="20" layout="column" layout-align="center center" layout-margin layout-padding style="width: 100%; height: 100%">
+            <md-content flex style="width: 100%; height: 100%">
+
+                <div layout="row" layout-align="center center">
+                    <h3 class="md-title">{{selectedProvider.prefix}} {{selectedProvider.first}} {{selectedProvider.last}} {{selectedProvider.degree}}</h3>
+                </div>
+                <div layout="row" layout-align="center center">
+                    <span>{{selectedProvider.specialty}}</span>
+                </div>
+                <div layout="row" layout-align="center center" layout-margin>
+                    <jk-rating-stars
+                            class="my-custom-stars"
+                            rating="selectedProvider.overallRating"
+                            max-rating="5"
+                            on-rating=""
+                            read-only="true">
+                    </jk-rating-stars>
+                </div>
+
+                <div layout="row" layout-align="center center">
+                    <md-button flex class="md-raised md-primary" ng-click="viewRatings();">READ REVIEWS</md-button>
+                </div>
+                <div layout="row" layout-align="center center">
+                    <md-button flex class="md-raised md-primary" ng-click="viewDirections();">GET DIRECTIONS</md-button>
+                </div>
+
+                <md-divider style="margin: 20px;"></md-divider>
+
+                <div layout="row" layout-margin>
+                    <div layout="column">
+                        <md-icon md-svg-icon="place"></md-icon>
+                    </div>
+
+                    <div layout="column">
+                        <span class="padding-left-10" ng-if="selectedProvider.locations.length != 1">{{selectedProvider.locations.length}} Locations</span>
+                        <span class="padding-left-10" ng-if="selectedProvider.locations.length == 1">{{selectedProvider.locations[0].city}}, {{selectedProvider.locations[0].state}}</span>
+                    </div>
+                </div>
+
+                <div layout="row" layout-margin>
+                    <div layout="column">
+                        <md-icon md-svg-icon="phone"></md-icon>
+                    </div>
+
+                    <div layout="column">
+                        <span class="padding-left-10" ng-if="selectedProvider.locations.length != 1">{{selectedProvider.locations.length}} Phones</span>
+                        <span class="padding-left-10" ng-if="selectedProvider.locations.length == 1">{{selectedProvider.locations[0].phone}}</span>
+                    </div>
+                </div>
+
+                <div layout="row" layout-margin>
+                    <div layout="column">
+                        <md-icon md-svg-icon="school"></md-icon>
+                    </div>
+
+                    <div layout="column">
+                        <span class="padding-left-10">{{selectedProvider.education.school.name}}</span>
+                    </div>
+                </div>
+
+        </md-content>
+    </md-whiteframe>
+    <!--Populates provider information based on tab selection of Summary, Locations & Directions, or Ratings & Reviews-->
+    <md-whiteframe class="md-whiteframe-1dp" layout="column" flex layout-margin layout-padding style="width: 100%; height: 100%">
+        <md-content flex layout-align="center center">
+            <md-tabs md-dynamic-height md-selected="selectedTab">
+                <md-tab label="Summary" >
+                    <md-content class="md-padding">
+                        <h3 class="md-title">About {{selectedProvider.prefix}} {{selectedProvider.first}} {{selectedProvider.last}}</h3>
+                        <p>{{selectedProvider.summary}}</p>
+                    </md-content>
+                </md-tab>
+                <md-tab label="Locations & Directions">
+                    <md-content class="md-padding">
+                        <div layout="row" ng-repeat="location in selectedProvider.locations" layout-margin layout-padding>
+                            <div layout="column">
+                                <image style="width: 200px; height: 150px;" src="app/icons/placeholder-map.png"></image>
+                            </div>
+                            <div layout="column">
+                                <h4>{{location.name}}</h4>
+                                <span>{{location.address1}}</span>
+                                <span>{{location.city}}, {{location.state}} {{location.zip}}</span>
+                                <span>{{location.phone}}</span>
+                            </div>
+                        </div>
+                        </md-content>
+                    </md-tab>
+                    <md-tab label="Ratings & Reviews">
+                        <md-content class="md-padding">
+                            <h2 class="md-title">Overall Rating</h2>
+
+                            <div layout="row">
+                                <jk-rating-stars
+                                        class="my-custom-stars"
+                                        rating="selectedProvider.overallRating"
+                                        max-rating="5"
+                                        on-rating=""
+                                        read-only="true">
+                                </jk-rating-stars>
+                                <span style="padding: 5px">  {{selectedProvider.overallRating}} out of 5 with {{selectedProvider.ratings.length}} ratings.</span>
+                            </div>
+                            <h3 class="md-title">Showing {{selectedProvider.ratings.length}} Comments</h3>
+                            <md-list-item class="md-3-line" ng-repeat="rating in selectedProvider.ratings">
+                                <div class="md-list-item-text" layout="column">
+                                    <h3>{{rating.title}}</h3>
+                                    <p>{{rating.comment}}</p>
+                                </div>
+                            </md-list-item>
+                        </md-content>
+                    </md-tab>
+                </md-tabs>
+            </md-content>
+        </md-whiteframe>
+    </div>
+    <!--Populates responsive ad image-->
+    <div flex layout="row" layout-margin layout-padding>
+        <image  style="width: 300px; height: 250px;" src="app/icons/responsive-ad.png"></image>
+    </div>
+</div>

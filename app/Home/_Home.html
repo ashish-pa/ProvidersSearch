@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body layout="column">
+	<!-- Nav Bar -->
+	<div data-ui-view="nav"></div>
+	<div ng-show="selectedProvider == undefined" class="full-page-size">
+		<md-content>
+			<!--Populates provider information on initial start up of application ordering by first name-->
+			<md-list-item class="md-3-line" ng-repeat="provider in providersData | orderBy:'first'" ng-click="viewDetails(provider);">
+				<div class="md-list-item-text" layout="row">
+					<div layout="column" flex="10">
+						<image id="avatar-image" src="app/icons/USER_ID.png"></image>
+					</div>
+					<div layout="column" flex="25">
+						<h3>{{provider.prefix}} {{provider.first}} {{provider.middle}} {{provider.last}}</h3>
+						<span>{{provider.specialty}}</span>
+					</div>
+					<div layout="column" flex>
+						<div ng-repeat="location in provider.locations">
+							{{location.address1}}, {{location.city}}, {{location.state}}
+						</div>
+					</div>
+					<!--Overall rating of provider-->
+					<div layout="column" flex>
+						<jk-rating-stars
+								class="my-custom-stars"
+								rating="provider.overallRating"
+								max-rating="5"
+								on-rating=""
+								read-only="true">
+						</jk-rating-stars>
+					</div>
+				</div>
+				<md-divider ></md-divider>
+			</md-list-item>
+		</md-content>
+	</div>
+
+	<!-- Shown when user clicks on a provider that shows detailed view for a given provider-->
+	<div ng-show="selectedProvider != undefined" data-ui-view="provider-details" class="full-page-size"></div>
+</body>
+</html>

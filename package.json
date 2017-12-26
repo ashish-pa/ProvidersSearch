@@ -1,0 +1,33 @@
+{
+  "name": "ProvidersSearch",
+  "version": "0.0.1",
+  "description": "Provider Search Engine allows consumers to search near by Providers and reading reviews with easy access to contacting Providers by phone",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "author": "Ashish Patel",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "1.5.7",
+    "angular-animate": "1.5.5",
+    "angular-aria": "1.5.5",
+    "angular-jk-rating-stars": "^1.0.8",
+    "angular-material": "1.1.0-rc4-master-06e7e99",
+    "angular-messages": "1.5.5",
+    "angular-resource": "1.5.5",
+    "angular-ui-router": "^0.4.3",
+    "express": "4.8.0"
+  },
+  "devDependencies": {
+    "angular": "1.5.7",
+    "angular-aria": "1.5.5",
+    "angular-jk-rating-stars": "^1.0.8",
+    "angular-animate": "1.5.5",
+    "angular-resource": "1.5.5",
+    "angular-ui-router": "^0.4.3",
+    "angular-material": "1.1.0-rc4-master-06e7e99",
+    "angular-messages": "1.5.5",
+    "express": "4.8.0"
+  }
+}

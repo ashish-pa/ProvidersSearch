@@ -1,0 +1,56 @@
+<!--Navigation bar-->
+<md-toolbar class="nav">
+    <div class="md-toolbar-tools">
+        <span flex></span>
+        <!--Nav bar auto complete-->
+        <md-autocomplete
+                md-input-name="autocomplete"
+                ng-model="searchProviders"
+                ng-disabled="false"
+                id="providerSearchBar"
+                md-no-cache="false"
+                md-selected-item="selectedProvider"
+                md-search-text-change="autoComplete(searchInput)"
+                md-search-text="searchInput"
+                md-selected-item-change="search(item)"
+                md-items="item in autoComplete(searchInput)"
+                md-item-text="item.fullName"
+                md-min-length="0"
+                placeholder="Search Providers"
+                flex="20"
+                md-menu-class="autocomplete-custom-template">
+            <!--Template for nav bar autocomplete-->
+            <md-item-template>
+                <span class="item-title">
+                    <span><strong> {{item.fullName}} {{item.degree}}</strong></span>
+                </span>
+                <span class="item-metadata">
+                    <span layout="row">
+                            {{location.name}}
+                    </span>
+                    <span layout="row" ng-repeat="location in item.locations">
+                            {{location.address1}}, {{location.city}}, {{location.state}}
+                    </span>
+                    <span layout="row">
+                        {{item.specialty}}
+                        <span flex></span>
+                        <jk-rating-stars
+                                class="my-custom-stars"
+                                rating="item.overallRating"
+                                max-rating="5"
+                                on-rating=""
+                                read-only="true">
+                        </jk-rating-stars>
+                    </span>
+                </span>
+            </md-item-template>
+            <md-not-found>
+                No matching "{{searchInput}}" were found.
+            </md-not-found>
+        </md-autocomplete>
+        <!--Search icon for nav bar autocomplete-->
+        <md-button ng-show="showNavSearch" class="searchbar-icon-right" ng-click="search(item)" aria-label="search">
+            <md-icon md-svg-icon="search"></md-icon>
+        </md-button>
+    </div>
+</md-toolbar>

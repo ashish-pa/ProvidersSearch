@@ -1,0 +1,266 @@
+[{
+    "first": "John",
+    "middle": "I",
+    "last": "Reed",
+    "prefix": "Dr.",
+    "degree": "MD",
+    "summary": "Dr. John Reed, MD is a Doctor primarily located in Worcester, MA, with another office in Westborough, MA. He has 40 years of experience. His specialties include Rheumatology and Internal Medicine. Dr. Reed is affiliated with UMass Memorial Medical Center - University Campus, Saint Vincent Hospital and UMass Memorial Medical Center. Dr. Reed has received 4 awards. He speaks English.",
+    "locations": [
+      {
+        "name": "Reliant Medical Group",
+        "address1": "425 Lake Ave N",
+        "city": "Worcester",
+        "state": "MA",
+        "state_name": "Massachusetts",
+        "zip": "01605",
+        "phone": "5084255446"
+      },
+      {
+        "name": "Reliant Medical Group",
+        "address1": "106 E Main St",
+        "city": "Westborough",
+        "state": "MA",
+        "state_name": "Massachusetts",
+        "zip": "01581",
+        "phone": "5083668836"
+      }
+    ],
+    "specialty": "Rheumatology",
+    "education": {
+      "school": {
+        "name": "University Of Rochester School Of Medicine And Dentistry",
+        "end_year": "1977"
+      },
+      "residency": {
+        "name": "Boston University Medical Center"
+      }
+    },
+    "ratings": [
+      {
+        "title": "Test Title 1",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean bibendum consequat ex, vel fermentum turpis. Fusce pulvinar, nunc ut vehicula viverra, felis dolor facilisis urna, non tincidunt felis libero eget est. Duis rutrum erat vitae enim luctus gravida. Etiam vel venenatis nunc.",
+        "rating": 4
+      },
+      {
+        "title": "Test Title 2",
+        "comment": "Nunc mi odio, condimentum ac tincidunt mattis, sagittis ac ipsum. Pellentesque at vulputate urna, sit amet pellentesque sem. Aenean condimentum lobortis nibh et convallis.",
+        "rating": 1
+      },
+      {
+        "title": "Test Title 3",
+        "comment": "In vulputate, elit sit amet tempus molestie, elit elit lobortis leo, sit amet porta lorem dui sed tortor. Curabitur tempus, libero vel sodales imperdiet, neque magna bibendum tortor, quis finibus enim nibh luctus orci. Sed est mauris, auctor ut quam at, venenatis finibus odio.",
+        "rating": 3
+      },
+      {
+        "title": "Test Title 4",
+        "comment": "In et nibh ornare dolor pharetra pellentesque. Donec convallis augue nisi, vitae iaculis eros finibus ut. Mauris imperdiet eget ante id scelerisque.",
+        "rating": 3
+      },
+      {
+        "title": "Test Title 5",
+        "comment": "Duis consectetur eget ex nec accumsan. Mauris vel purus a tellus commodo tincidunt. Donec ac tempor nulla. Aliquam viverra vel massa sed sollicitudin.",
+        "rating": 5
+      },
+      {
+        "title": "Test Title 6",
+        "comment": "Donec eu justo lobortis, facilisis leo eget, semper ipsum. Mauris non libero interdum, laoreet purus sed, eleifend quam. Quisque ac urna ultrices, egestas enim at, pellentesque nibh. Curabitur euismod, elit sit amet vestibulum tincidunt, massa eros tincidunt dui, quis euismod nibh sapien et magna.",
+        "rating": 1
+      }
+    ]
+  },
+  {
+    "first": "Gracia",
+    "middle": "B",
+    "last": "Perez-Lirio",
+    "prefix": "Dr.",
+    "degree": "MD",
+    "summary": "Dr. Gracia Perez-Lirio, MD is a Doctor primarily located in Needham Heights, MA, with another office in Needham Heights, MA. She has 20 years of experience. Her specialties include Internal Medicine. Dr. Perez-Lirio is affiliated with Beth Israel Deaconess Hospital-Needham, Beth Israel Deaconess Medical Center and Beth Israel Deaconess Health Care. She speaks English.",
+    "locations": [
+      {
+        "name": "Irina Kogan MD",
+        "address1": "817 Highland Ave",
+        "city": "Needham Heights",
+        "state": "MA",
+        "state_name": "Massachusetts",
+        "zip": "02494",
+        "phone": "7813267815"
+      },
+      {
+        "name": "Beth Israel Deaconess Healthcare",
+        "address1": "100 2nd Ave",
+        "city": "Needham Heights",
+        "state": "MA",
+        "state_name": "Massachusetts",
+        "zip": "02494"
+      }
+    ],
+    "specialty": "Internal Medicine",
+    "education": {
+      "school": {
+        "name": "Emilio Aguinaldo College",
+        "end_year": "1996"
+      },
+      "residency": {
+        "name": "U S Department Of Veterans Affairs"
+      }
+    },
+    "ratings": [
+      {
+        "title": "Test Title 7",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean bibendum consequat ex, vel fermentum turpis. Fusce pulvinar, nunc ut vehicula viverra, felis dolor facilisis urna, non tincidunt felis libero eget est. Duis rutrum erat vitae enim luctus gravida. Etiam vel venenatis nunc.",
+        "rating": 5
+      },
+      {
+        "title": "Test Title 8",
+        "comment": "Donec eu justo lobortis, facilisis leo eget, semper ipsum. Mauris non libero interdum, laoreet purus sed, eleifend quam. Quisque ac urna ultrices, egestas enim at, pellentesque nibh. Curabitur euismod, elit sit amet vestibulum tincidunt, massa eros tincidunt dui, quis euismod nibh sapien et magna.",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "first": "David",
+    "middle": "J",
+    "last": "Kieff",
+    "prefix": "Dr.",
+    "degree": "MD",
+    "summary": "David Kieff, M.D. is a Doctor primarily located in Wellesley, MA. He has 25 years of experience. His specialties include Otolaryngology. David Kieff is affiliated with Massachusetts Eye And Ear Infirmary, Faulkner Hospital and Newton-Wellesley Hospital. David Kieff has received 9 awards.",
+    "locations": [
+      {
+        "name": "Shmg Orthopaedics & Sports Medicine",
+        "address1": "2750 E Beltline Ave SE",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "state_name": "Michigan",
+        "zip": "49546",
+        "phone": "6169744889"
+      },
+      {
+        "name": "SHMG ORTHOPAEDICS AND SPORTS MEDICINE",
+        "address1": "4100 Lake Dr SE",
+        "city": "Grand Rapids",
+        "state": "MI",
+        "state_name": "Michigan",
+        "zip": "49546",
+        "phone": "6169744889"
+      }
+    ],
+    "specialty": "Gastroenterology",
+    "education": {
+      "school": {
+        "name": "University of Michigan Medical School",
+        "end_year": "1996"
+      },
+      "residency": {
+        "name": "Spectrum Health"
+      }
+    },
+    "ratings": [
+      {
+        "title": "Test Title 9",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean bibendum consequat ex, vel fermentum turpis. Fusce pulvinar, nunc ut vehicula viverra, felis dolor facilisis urna, non tincidunt felis libero eget est. Duis rutrum erat vitae enim luctus gravida. Etiam vel venenatis nunc.",
+        "rating": 2
+      },
+      {
+        "title": "Test Title 10",
+        "comment": "Donec eu justo lobortis, facilisis leo eget, semper ipsum. Mauris non libero interdum, laoreet purus sed, eleifend quam. Quisque ac urna ultrices, egestas enim at, pellentesque nibh. Curabitur euismod, elit sit amet vestibulum tincidunt, massa eros tincidunt dui, quis euismod nibh sapien et magna.",
+        "rating": 3
+      },
+      {
+        "title": "Test Title 11",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean bibendum consequat ex, vel fermentum turpis. Fusce pulvinar, nunc ut vehicula viverra, felis dolor facilisis urna, non tincidunt felis libero eget est. Duis rutrum erat vitae enim luctus gravida. Etiam vel venenatis nunc.",
+        "rating": 5
+      },
+      {
+        "title": "Test Title 12",
+        "comment": "Donec eu justo lobortis, facilisis leo eget, semper ipsum. Mauris non libero interdum, laoreet purus sed, eleifend quam. Quisque ac urna ultrices, egestas enim at, pellentesque nibh. Curabitur euismod, elit sit amet vestibulum tincidunt, massa eros tincidunt dui, quis euismod nibh sapien et magna.",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "first": "Lisa",
+    "middle": "M",
+    "last": "Hassler",
+    "prefix": "Dr.",
+    "degree": "MD",
+    "summary": "Dr. Lisa Hassler, MD is a Doctor primarily located in Southborough, MA. She has 20 years of experience. Her specialties include Pediatrics. Dr. Hassler is affiliated with Metrowest Medical Center - Framingham Union Hospital, Children's Hospital and MetroWest Medical Center - Framingham Union. Dr. Hassler has received 3 awards. She speaks English.",
+    "locations": [
+      {
+        "name": "Southboro Medical Group",
+        "address1": "24 Newton St",
+        "city": "Southborough",
+        "state": "MA",
+        "state_name": "Massachusetts",
+        "zip": "01772",
+        "phone": "5084815500"
+      }
+    ],
+    "specialty": "Pediatrics",
+    "education": {
+      "school": {
+        "name": "Pennsylvania State University College Of Medicine",
+        "end_year": "1997"
+      },
+      "residency": {
+        "name": "Umass Medical School"
+      }
+    },
+    "ratings": [
+      {
+        "title": "Test Title 13",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean bibendum consequat ex, vel fermentum turpis. Fusce pulvinar, nunc ut vehicula viverra, felis dolor facilisis urna, non tincidunt felis libero eget est. Duis rutrum erat vitae enim luctus gravida. Etiam vel venenatis nunc.",
+        "rating": 4
+      },
+      {
+        "title": "Test Title 14",
+        "comment": "Nunc mi odio, condimentum ac tincidunt mattis, sagittis ac ipsum. Pellentesque at vulputate urna, sit amet pellentesque sem. Aenean condimentum lobortis nibh et convallis.",
+        "rating": 1
+      },
+      {
+        "title": "Test Title 15",
+        "comment": "In vulputate, elit sit amet tempus molestie, elit elit lobortis leo, sit amet porta lorem dui sed tortor. Curabitur tempus, libero vel sodales imperdiet, neque magna bibendum tortor, quis finibus enim nibh luctus orci. Sed est mauris, auctor ut quam at, venenatis finibus odio.",
+        "rating": 3
+      }
+    ]
+  },
+  {
+    "first": "Andrew",
+    "last": "Braziel",
+    "prefix": "Dr.",
+    "degrees": "MD",
+    "summary": "Dr. Andrew Braziel, MD is a Doctor primarily located in Roxbury Crossing, MA, with another office in Worcester, MA. He has 7 years of experience. His specialties include Orthopedic Surgery. Dr. Braziel is affiliated with New England Baptist Hospital. He speaks English.",
+    "locations": [
+      {
+        "name": "New England Baptist Hospital",
+        "address1": "125 Parker Hill Ave",
+        "city": "Roxbury Crossing",
+        "state": "MA",
+        "state_name": "Massachusetts",
+        "zip": "02120",
+        "phone": "6177545800"
+      }
+    ],
+    "specialty": "Orthopedic Surgery",
+    "education": {
+      "school": {
+        "name": "Georgetown University School Of Medicine",
+        "end_year": "2010"
+      },
+      "residency": {
+        "name": "Umass Memorial Medical Center"
+      }
+    },
+    "ratings": [
+      {
+        "title": "Test Title 16",
+        "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean bibendum consequat ex, vel fermentum turpis. Fusce pulvinar, nunc ut vehicula viverra, felis dolor facilisis urna, non tincidunt felis libero eget est. Duis rutrum erat vitae enim luctus gravida. Etiam vel venenatis nunc.",
+        "rating": 5
+      },
+      {
+        "title": "Test Title 17",
+        "comment": "Donec eu justo lobortis, facilisis leo eget, semper ipsum. Mauris non libero interdum, laoreet purus sed, eleifend quam. Quisque ac urna ultrices, egestas enim at, pellentesque nibh. Curabitur euismod, elit sit amet vestibulum tincidunt, massa eros tincidunt dui, quis euismod nibh sapien et magna.",
+        "rating": 4
+      }
+    ]
+  }
+]
